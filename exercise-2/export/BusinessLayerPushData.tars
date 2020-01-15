@@ -1,0 +1,28 @@
+#include "IMBaseDefine.tars"
+
+module IMCommonPlatform
+{
+
+    struct BusinessLayerPushDataReq
+    {
+        0 optional vector<long> toIdList;
+        1 optional vector<PushUserInfo> excludeUserInfoList;
+        2 optional bool pushNotification;
+        3 optional bool bAsyncInvoke;
+        4 optional string msgClassName;
+        5 optional string msg;
+        6 optional long fromSessionId;       // 消息来源会话Id
+        7 optional SessionType sessionType;  // 消息来源会话类型
+    };
+
+    struct BusinessLayerPushDataRes
+    {
+        0 optional SvcReqResultCode resultCode;
+        1 optional string reason;
+    };
+
+    interface BusinessLayerPushData
+    {
+        int PushData(BusinessLayerPushDataReq req, out BusinessLayerPushDataRes res);
+    };
+};

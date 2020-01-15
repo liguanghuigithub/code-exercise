@@ -1,0 +1,5 @@
+/home/lgh/桌面/ontimer/build/CMakeFiles/cleanall.dir
+/home/lgh/桌面/ontimer/build/CMakeFiles/ontimer.dir
+/home/lgh/桌面/ontimer/build/CMakeFiles/tar.dir
+/home/lgh/桌面/ontimer/build/CMakeFiles/tars2cpp.dir
+/home/lgh/桌面/ontimer/build/CMakeFiles/versionheader.dir
